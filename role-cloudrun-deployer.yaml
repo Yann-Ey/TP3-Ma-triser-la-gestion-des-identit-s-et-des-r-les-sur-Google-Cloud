@@ -1,0 +1,17 @@
+title: "Déployeur Cloud Run Personnalisé"
+description: "Permet de créer, lister, mettre à jour et supprimer des services Cloud Run."
+stage: "GA"
+includedPermissions:
+  # Permissions pour créer et mettre à jour
+  - run.services.create
+  - run.services.update
+  
+  # Permissions pour lister et lire
+  - run.services.list
+  - run.services.get
+  
+  # Permission pour supprimer
+  - run.services.delete
+  
+  # Permission essentielle pour le déploiement
+  - iam.serviceAccounts.actAs
